@@ -1,0 +1,25 @@
+{
+  "name": "deno-api-client",
+  "version": "1.0.0",
+  "tasks": {
+    "start": "deno run --allow-net --allow-env --allow-read src/shared/infra/http/server.ts",
+    "dev": "deno run --allow-net --allow-env --allow-read --watch src/shared/infra/http/server.ts"
+  },
+  "exports": {
+    ".": "./src/mod.ts"
+  },
+  "compilerOptions": {
+    "strict": true
+  },
+  "imports": {
+    "@google/generative-ai": "npm:@google/generative-ai@^0.24.1",
+    "@hono/hono": "jsr:@hono/hono@^4.11.3",
+    "@needle-di/core": "jsr:@needle-di/core@^1.1.0",
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.6",
+    "openai": "npm:openai@^6.15.0",
+    "reflect-metadata": "npm:reflect-metadata@^0.2.2",
+    "@modules/": "./src/modules/",
+    "@config/": "./src/config/",
+    "@shared/": "./src/shared/"
+  }
+}

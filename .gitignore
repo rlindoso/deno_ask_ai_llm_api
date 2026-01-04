@@ -1,0 +1,73 @@
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Deno cache / build
+# =========================
+.deno/
+deno-cache/
+
+# =========================
+# Node / npm compatibility
+# =========================
+node_modules/
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+!.vscode/settings.json
+.idea/
+*.swp
+
+# =========================
+# Coverage / test artifacts
+# =========================
+coverage/
+reports/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+
+# =========================
+# Build output (if any)
+# =========================
+dist/
+build/
+out/
+
+# =========================
+# Secrets / credentials
+# =========================
+*.pem
+*.key
+*.crt
+
+# =========================
+# Ignore dotenv local overrides
+# =========================
+.env.local
+.env.development
+.env.test
+.env.production
